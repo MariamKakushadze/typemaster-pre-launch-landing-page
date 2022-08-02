@@ -28,6 +28,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    .mobile-margin{
+        overflow-x: hidden;
+        margin-left:-24px;
+    }
     .logo-link{
         margin:0;
     }
@@ -179,9 +183,11 @@
     }
 
     @media only screen and (min-width: 768px){
+         body{
+            overflow-x: hidden;
+        }
         .container{
             padding:39px;
-            max-width:900px;
           }
         .mobile,
         .desktop{
@@ -206,6 +212,9 @@
             justify-content: space-between;
             align-items: center;
             column-gap: 40px;
+        }
+        .mobile-margin{
+            margin-left: 0;
         }
         
         .orange-background{
@@ -326,5 +335,7 @@
             .third{
                 margin-right:50px;
             }
-            
+            .mobile-margin{
+            margin-left: 0;
+        }
         }

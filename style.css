@@ -28,6 +28,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    .mobile-margin{
+        overflow-x: hidden;
+        margin-left:-24px;
+    }
     .logo-link{
         margin:0;
     }
@@ -179,9 +183,11 @@
     }
 
     @media only screen and (min-width: 768px){
+         body{
+            overflow-x: hidden;
+        }
         .container{
             padding:39px;
-            max-width:900px;
           }
         .mobile,
         .desktop{
@@ -206,6 +212,9 @@
             justify-content: space-between;
             align-items: center;
             column-gap: 40px;
+        }
+        .mobile-margin{
+            margin-left: 0;
         }
         
         .orange-background{
@@ -241,6 +250,7 @@
             margin-top:0;
             margin-top:100px;
            column-gap: 69px;
+            
            
         }
         .boxes{
@@ -283,7 +293,7 @@
             .features{
                 display:grid;
                 grid-template-columns: auto auto auto auto;
-                column-gap: 30px;
+                justify-content: space-between;
             }
             .boxes{
                 justify-content: space-between;
@@ -319,10 +329,13 @@
             }
             .desktop-grid{
                 display:grid;
-                grid-template-columns: auto auto auto; 
+                grid-template-columns: 75% 25%;
+                justify-content: space-between;
             }
             .third{
                 margin-right:50px;
             }
-            
+            .mobile-margin{
+            margin-left: 0;
+        }
         }

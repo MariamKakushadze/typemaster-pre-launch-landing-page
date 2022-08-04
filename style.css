@@ -262,7 +262,7 @@
         @media only screen and (min-width: 1300px){
             .container{
                 padding:64px 160px;
-                max-width:2000px;
+                max-width:1200px;
               }
             .mobile,
             .tablet{
